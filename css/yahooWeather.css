@@ -1,0 +1,129 @@
+/* Some default styles to prevent being overriden by other style sheets */
+.weather-widget, .weather-widget div, .weather-widget img {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    background-color: transparent;
+    color: #000000;
+    font-family: Arial, 'Helvectica Neue', Helvectica, sans-serif;
+    font-weight: normal;
+    text-align: left;
+    text-decoration: none;
+    height: auto;
+    width: auto;
+}
+.weather-widget-center {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+.weather-widget {
+    background-color: #FFFFFF;
+    border: 1px solid #B0B0B0;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 8px 8px 8px #585858;
+    -moz-box-shadow: 8px 8px 8px #585858;
+    -webkit-box-shadow: 8px 8px 8px #585858;
+    height: 160px;
+    width: 310px;
+}
+
+.weather-widget .weather-widget-loading {
+    font-weight: bold;
+    margin-top: 75px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.weather-widget .weather-widget-error {
+    color: #d40000;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+.weather-widget .weather-widget-title {
+    font-size: 18px;
+    margin: 10px 10px 0px 10px;
+}
+
+.weather-widget .weather-widget-current-conditions {
+    margin: 5px 10px 0px 10px;
+}
+
+.weather-widget .weather-widget-current-temp {
+    display: inline-block;
+    font-size: 65px;
+    vertical-align: top;
+}
+
+.weather-widget .weather-widget-current-image-container {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.weather-widget .weather-widget-current-image img {
+    max-height: 52px;
+    max-width: 52px;
+}
+
+.weather-widget .weather-widget-current-image-text {
+    font-size: 10px;
+    text-align: center;
+}
+.weather-widget .weather-widget-today-sun-info{
+    float: right;
+    width: 25%;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.weather-widget .weather-widget-today-sunrise::before { 
+    content: "\2191";
+    margin: 0px 3px 0 0;
+    vertical-align: 9%;
+}
+
+.weather-widget .weather-widget-today-sunset::before { 
+    content: "\2193";
+    margin: 0px 3px 0 0;
+    vertical-align: 9%;
+}
+
+.weather-widget .weather-widget-forecast {
+    text-align: center;
+}
+
+.weather-widget .weather-widget-forecast-item {
+    display: inline-block;
+    border-right: 1px dotted #B0B0B0;
+    padding: 8px;
+    max-width: 45px;
+    max-height: 25px;
+}
+
+.weather-widget .weather-widget-forecast-item:last-child {
+    border-right: none;
+}
+
+.weather-widget .weather-widget-forecast-day {
+    font-size: 11px;
+    text-align: center;
+}
+
+.weather-widget .weather-widget-forecast-temp {
+    font-size: 10px;
+    text-align: center;
+}
