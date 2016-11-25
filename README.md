@@ -13,14 +13,16 @@ Add a div element to a page with either an id to identify it.
 </body>
 ```
 
-Call the Yahoo Weather Widget function and provide the element ID and Location in the function paramater.
+Call the Yahoo Weather Widget function and provide the element ID and Location in the function paramater. Make sure add this function after the DOM is loaded.
 ```js
-yahooWeather({
-    elementId : 'weather-widget',
-    location: 'Fairfax, VA',
-    // temperature: 'c', //Uncomment this if you need temprature in celcius
-    //liveUpdate: true, //Uncomment this if you need to enable the live update of the weather. It will start updating the weather information in every one Hour.
-    //liveUpdateInterval: 10000, //Uncomment this if you need to change the interval time of the live upate weather information. By default it is one hour. it will work only if the liveUpdate if true.
+document.addEventListener('DOMContentLoaded', function() {
+    yahooWeather({
+        elementId : 'weather-widget',
+        location: 'Fairfax, VA',
+        // temperature: 'c', //Uncomment this if you need temprature in celcius
+        //liveUpdate: true, //Uncomment this if you need to enable the live update of the weather. It will start updating the weather information in every one Hour.
+        //liveUpdateInterval: 10000, //Uncomment this if you need to change the interval time of the live upate weather information. By default it is one hour. it will work only if the liveUpdate if true.
+    });
 });
 ```
 
